@@ -28,4 +28,3 @@ if __name__ == '__main__':
     sec_reverse_copy(dst, src, len(src))
     print('src:', src.hex())
     print('dst:', dst.hex())  # 反向複製結果
-    print('dst:', ' '.join(f'0x{b:02X}' for b in dst))  # 反向複製結果
