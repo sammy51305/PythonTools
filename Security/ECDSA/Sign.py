@@ -64,4 +64,4 @@ def sign_message_from_file(input_file='Sign_input.txt'):
 
 # 若直接執行本檔案，則自動執行一次
 if __name__ == '__main__':
-    sign_message_from_file('c:/Workspace/PythonTools/Security/ECDSA/Sign_input.txt')
+    sign_message_from_file('c:/Workspace/PythonTools/Security/ECDSA/Sign_input_spdm.txt')

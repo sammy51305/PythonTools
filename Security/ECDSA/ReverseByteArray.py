@@ -14,7 +14,7 @@ def sec_reverse_copy(dst: bytearray, src: bytes, num: int):
 if __name__ == '__main__':
     # 從 Sign_input.txt 讀取 d 欄位
     d_hex = None
-    with open('Security/ECDSA/Sign_input.txt', 'r', encoding='utf-8') as f:
+    with open('Security/ECDSA/Sign_input_spdm.txt', 'r', encoding='utf-8') as f:
         for line in f:
             if line.strip().startswith('d='):
                 d_raw = line.strip().split('=', 1)[1]
@@ -28,3 +28,4 @@ if __name__ == '__main__':
     sec_reverse_copy(dst, src, len(src))
     print('src:', src.hex())
     print('dst:', dst.hex())  # 反向複製結果
+    print('dst:', ' '.join(f'0x{b:02X}' for b in dst))  # 反向複製結果
